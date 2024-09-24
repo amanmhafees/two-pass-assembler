@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass 1 Assembler Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="pass1" class="pass">
+            <h1>Pass 1 Assembler Simulator</h1>
+            <input type="file" id="Input_file" />
+            <h3>Input File</h3>
+            <pre id="output_input"></pre>
+            <input type="file" id="Optab_file" />
+            <h3>Optab File</h3>
+            <pre id="output_optab"></pre>
+            <button disabled id="startButton">Start</button>
+            <button id="downloadIntermediate" style="display:none;">Download Intermediate File</button>
+            <button id="downloadSymtab" style="display:none;">Download Symtab</button>
+            <h3>Intermediate file</h3>
+            <pre id="inter_file"></pre>
+            <h3>Symtab</h3>
+            <pre id="symtab"></pre>
+            
+        </div>
+        <div id="pass2" class="pass">
+            <h1>Pass 2</h1>
+            <pre id="output_pass2"></pre>
+            <h2>Header</h2>
+            <pre id="header-record"></pre>
+            <h2>Text</h2>
+            <pre id="text-record"></pre>
+            <h2>End</h2>
+            <pre id="end-record"></pre>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

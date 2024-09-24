@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.pass {
+    flex: 1; /* Each section takes equal space */
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Add border for clarity */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#pass1 {
+    background-color: #f9f9f9; /* Light background for Pass 1 */
+}
+
+#pass2 {
+    background-color: #e9e9e9; /* Slightly darker background for Pass 2 */
+}
+
+h1 {
+    margin-top: 0; /* Remove default margin for better spacing */
+    font-size: 1.5em; /* Increase font size for headings */
+    color: #333; /* Darker color for better readability */
+}
+
+h3 {
+    margin-top: 20px; /* Space above subheadings */
+    color: #555; /* Slightly lighter color for subheadings */
+}
+
+pre {
+    background-color: #f0f0f0; /* Light gray background for code sections */
+    padding: 10px; /* Padding inside pre elements */
+    border-radius: 5px; /* Rounded corners */
+    overflow-x: auto; /* Horizontal scrolling for long lines */
+    white-space: pre-wrap; /* Wrap long lines */
+}
+
+input[type="file"] {
+    margin-top: 10px; /* Space above file inputs */
+    margin-bottom: 20px; /* Space below file inputs */
+}
+
+button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:disabled {
+    background-color: #ccc; /* Gray background when disabled */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
