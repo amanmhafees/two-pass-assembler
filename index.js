@@ -59,7 +59,7 @@ function processFileContent(content) {
         if (words.length <= 3) {
             let [label, opcode, operand] = words.map(word => word.trim());
             output.innerHTML += `${label || '[EMPTY]'}\t${opcode || '[EMPTY]'}\t${operand || '[EMPTY]'}\n`;
-            if (label !== '**') {
+            if (label !== '**' && opcode != 'START') {
                 if (!sym_list.includes(label)) {
                     sym_list[j++] = label;
                     sym_addresses.push(locctr);
